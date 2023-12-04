@@ -4,6 +4,9 @@ const ClimaContext = createContext()
 
 const ClimaProvider = ({ children }) => {
 
+  // Para saber si estoy viendo la API_KEY
+  // console.log(import.meta.env.VITE_API_KEY)
+
   const [busqueda, setBusqueda] = useState({
     ciudad: '',
     pais: ''
